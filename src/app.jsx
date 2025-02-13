@@ -1,8 +1,10 @@
+import { About } from "./components/About/Index"
+
 const App = () => {
   return (
-    <>
-      <h1>Boilerplace + React</h1>
-    </>
+    <div className="app">
+      <About />
+    </div>
   )
 }
 
