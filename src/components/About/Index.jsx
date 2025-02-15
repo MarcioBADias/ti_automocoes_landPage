@@ -1,23 +1,16 @@
 import React from 'react'
-import { AnimatedLogo } from './styles'
+import { AnimatedLogo, Container } from './styles'
 
 const About = () => {
   return (
-    <section style={{ padding: 50 }}>
-      <div
-        className="display"
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
+    <section>
+      <Container>
         <AnimatedLogo
           src="/LogoProv.png"
           alt="Arte da Logo"
           className="logo_art"
         />
-      </div>
+      </Container>
       <div
         className="prev_about"
         style={{ textAlign: 'center', marginBottom: 20 }}
