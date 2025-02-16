@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll'
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
@@ -50,6 +51,16 @@ export const Menu = styled.ul`
     top: 80px;
     width: 100%;
     z-index: 99;
+  }
+`
+export const LinkItem = styled(Link)`
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+  color: inherit;
+
+  &:hover {
+    color: var(--color-secondary);
   }
 `
 

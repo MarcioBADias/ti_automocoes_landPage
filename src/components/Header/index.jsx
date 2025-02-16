@@ -1,26 +1,25 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll'
 import { CgMenuRightAlt, CgCloseR } from 'react-icons/cg'
-import * as C from './styles'
+import {
+  ButtonMenu,
+  IconMenu,
+  ItemMenu,
+  LinkItem,
+  Logo,
+  Menu,
+  Nav,
+} from './styles'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
 
   return (
-    <C.Nav>
-      <Link
-        style={{ textDecoration: 'none', display: 'flex' }}
-        to="home"
-        spy={true}
-        smooth={true}
-        offset={-80}
-        duration={800}
-      >
-        <C.Logo src="/LogoProv.png" alt="Logo Checkspeech" />
-      </Link>
-      <C.Menu showMenu={showMenu}>
-        <Link
-          style={{ textDecoration: 'none', display: 'flex' }}
+    <Nav>
+      <LinkItem to="home" spy={true} smooth={true} offset={-80} duration={800}>
+        <Logo src="/LogoProv.png" alt="Logo Checkspeech" />
+      </LinkItem>
+      <Menu showMenu={showMenu}>
+        <LinkItem
           to="home"
           spy={true}
           smooth={true}
@@ -28,54 +27,29 @@ const Header = () => {
           duration={800}
           onClick={() => setShowMenu(!showMenu)}
         >
-          <C.ItemMenu>Início</C.ItemMenu>
-        </Link>
-        <Link
-          style={{ textDecoration: 'none', display: 'flex' }}
-          to="about"
+          <ItemMenu>Início</ItemMenu>
+        </LinkItem>
+        <LinkItem
+          to="products"
           spy={true}
           smooth={true}
           offset={-80}
           duration={800}
           onClick={() => setShowMenu(!showMenu)}
         >
-          <C.ItemMenu>Sobre</C.ItemMenu>
-        </Link>
-        <Link
-          style={{ textDecoration: 'none', display: 'flex' }}
-          to="solutions"
+          <ItemMenu>Produtos</ItemMenu>
+        </LinkItem>
+        <LinkItem
+          to="services"
           spy={true}
           smooth={true}
           offset={-80}
           duration={800}
           onClick={() => setShowMenu(!showMenu)}
         >
-          <C.ItemMenu>Soluções</C.ItemMenu>
-        </Link>
-        <Link
-          style={{ textDecoration: 'none', display: 'flex' }}
-          to="clients"
-          spy={true}
-          smooth={true}
-          offset={-80}
-          duration={800}
-          onClick={() => setShowMenu(!showMenu)}
-        >
-          <C.ItemMenu>Clientes</C.ItemMenu>
-        </Link>
-        <Link
-          style={{ textDecoration: 'none', display: 'flex' }}
-          to="prices"
-          spy={true}
-          smooth={true}
-          offset={-80}
-          duration={800}
-          onClick={() => setShowMenu(!showMenu)}
-        >
-          <C.ItemMenu>Preços</C.ItemMenu>
-        </Link>
-        <Link
-          style={{ textDecoration: 'none', display: 'flex' }}
+          <ItemMenu>Serviços</ItemMenu>
+        </LinkItem>
+        <LinkItem
           to="contacts"
           spy={true}
           smooth={true}
@@ -83,27 +57,27 @@ const Header = () => {
           duration={800}
           onClick={() => setShowMenu(!showMenu)}
         >
-          <C.ItemMenu>Contato</C.ItemMenu>
-        </Link>
-      </C.Menu>
+          <ItemMenu>Contato</ItemMenu>
+        </LinkItem>
+      </Menu>
 
-      <C.ButtonMenu onClick={() => setShowMenu(!showMenu)}>
-        <C.IconMenu>
+      <ButtonMenu onClick={() => setShowMenu(!showMenu)}>
+        <IconMenu>
           {showMenu ? (
             <CgCloseR />
           ) : (
             <CgMenuRightAlt>
-              <C.Menu showMenu={showMenu}>
-                <C.ItemMenu>Início</C.ItemMenu>
-                <C.ItemMenu>Soluções</C.ItemMenu>
-                <C.ItemMenu>Preços</C.ItemMenu>
-                <C.ItemMenu>Contatos</C.ItemMenu>
-              </C.Menu>
+              <Menu showMenu={showMenu}>
+                <ItemMenu>Início</ItemMenu>
+                <ItemMenu>Produtos</ItemMenu>
+                <ItemMenu>Serviços</ItemMenu>
+                <ItemMenu>Contatos</ItemMenu>
+              </Menu>
             </CgMenuRightAlt>
           )}
-        </C.IconMenu>
-      </C.ButtonMenu>
-    </C.Nav>
+        </IconMenu>
+      </ButtonMenu>
+    </Nav>
   )
 }
 
