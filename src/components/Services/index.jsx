@@ -1,5 +1,5 @@
 import React, { useEffect, useReducer } from 'react'
-import { Container } from './styles'
+import { BoxInfo, Container } from './styles'
 
 const reduce = (state, action) => {
   if (action.type === 'set_infos') {
@@ -31,12 +31,14 @@ const Services = () => {
   return (
     <Container name="services" id="services">
       <div>
-        <h1>Segmentos</h1>
+        <h1 style={{ textAlign: 'center' }}>Segmentos</h1>
         {status.infos.map((info, index) => (
-          <div key={index}>
-            <h2 style={{ marginBottom: 10 }}>{info.subtitle}</h2>
-            <p>{info.description}</p>
-          </div>
+          <BoxInfo key={index}>
+            <div>
+              <h2 style={{ marginBottom: 10 }}>{info.subtitle}</h2>
+              <p>{info.description}</p>
+            </div>
+          </BoxInfo>
         ))}
       </div >
     </Container>

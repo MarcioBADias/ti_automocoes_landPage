@@ -13,3 +13,11 @@ export const Container = styled(Element)`
     width: 50%;
   }
 `
+export const BoxInfo = styled.div`
+  background: var(--color-light);
+  border-radius: 10px;
+  color: var(--color-primary);
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+`
