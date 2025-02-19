@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Formik, Form } from "formik";
-import axios from 'axios';
 import * as Yup from 'yup';
 import { Button, Container, ErrorMessage, Input, InputTextArea, Section, Title } from "./styles";
 
@@ -12,18 +11,6 @@ const schema = Yup.object().shape({
 
 
 const Contact = () => {
-
-    const [countries, setCountries] = useState([]);
-
-    useEffect(()=>{
-        const fetchCountries = async () => {
-            const response = await axios.get('https://countryapi.gear.host/v1/Country/getCountries');
-            setCountries(response.data.Response);
-        };
-        fetchCountries();
-    }, []);
-
-    console.log(countries);
 
     return(
         <Section id="contacts">   
