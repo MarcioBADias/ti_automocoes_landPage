@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bree+Serif&family=Inconsolata:wght@200..900&family=Telex&display=swap');
 
 :root {
-  --color-light: #ffffff;
+  --color-light: #efefff;
   --color-primary: #181a4a;
   --color-secondary: #6b7398;
 }
 
 * {
   box-sizing: border-box;
-  color: var(--color-light);
+  color: var(--color-primary);
   font-family: 'Telex', serif;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: var(--color-primary);
+  background: var(--color-light);
 }
 
 section {

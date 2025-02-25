@@ -6,7 +6,7 @@ const About = () => {
     <section>
       <Container name="home" id="home">
         <AnimatedLogo
-          src="/LogoProv.png"
+          src="/LogoTICavalinho.png"
           alt="Arte da Logo"
           className="logo_art"
         />

@@ -6,17 +6,17 @@ export const Container = styled(Element)`
   display: 'flex';
   justify-content: 'center';
   padding: 1rem 2rem;
-  margin-top: 10%;
+  margin-top: 20%;
 
   @media (min-width: 840px) {
+    margin-top: 5%;
     padding: 1rem;
     width: 50%;
   }
 `
 
 export const AnimatedLogo = styled.img`
-  margin-top: 1rem;
-  margin-bottom: -5rem;
+  margin: 1rem 0 -5rem 0rem;
   width: 250px;
   animation: spinHorizontal 5s linear infinite;
 
@@ -30,7 +30,8 @@ export const AnimatedLogo = styled.img`
   }
 
   @media (min-width: 840px) {
-    margin: 0 auto;
-    width: 80%;
+    align-items: center;
+    margin: 1rem 0 -5rem 15rem;
+    width: 35%;
   }
 `
