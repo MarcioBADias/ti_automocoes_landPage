@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <Nav>
       <LinkItem to="home" spy={true} smooth={true} offset={-80} duration={800}>
-        <Logo src="/LogoTICavalinho.png" alt="Logo Checkspeech" />
+        <Logo src="/Logo_TI.png" alt="Logo Checkspeech" />
       </LinkItem>
       <Menu showMenu={showMenu}>
         <LinkItem

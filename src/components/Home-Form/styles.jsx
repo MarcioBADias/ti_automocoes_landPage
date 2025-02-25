@@ -6,10 +6,9 @@ export const Container = styled(Element)`
   display: 'flex';
   justify-content: 'center';
   padding: 1rem 2rem;
-  margin-top: 20%;
 
   @media (min-width: 840px) {
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 1rem;
     width: 50%;
   }

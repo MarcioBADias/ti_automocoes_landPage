@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Nav = styled.nav`
   align-items: center;
   background: rgb(32, 24, 77);
-  background: var(--color-primary);
+  background: var(--color-light);
   color: var(--color-light);
   display: flex;
   height: 80px;

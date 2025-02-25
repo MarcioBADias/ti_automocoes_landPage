@@ -1,5 +1,5 @@
-import { About } from '@/components/About/Index'
-import { Contact } from '@/components/Contact'
+import { About } from '@/components/Home-Form/Index'
+import { Contact } from '@/components/Advantages'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Products } from '@/components/Products'
