@@ -32,14 +32,17 @@ const Services = () => {
     <Container name="services" id="services">
       <div>
         <h1 style={{ textAlign: 'center' }}>Segmentos</h1>
+        <BoxInfo>
         {status.infos.map((info, index) => (
-          <BoxInfo key={index}>
-            <BoxItem>
+          <BoxItem key={index}>
+            <div>
               <h2 style={{ marginBottom: 10 }}>{info.subtitle}</h2>
               <p>{info.description}</p>
-            </BoxItem>
-          </BoxInfo>
+            </div>
+          </BoxItem>
         ))}
+          
+        </BoxInfo>
       </div >
     </Container>
   )

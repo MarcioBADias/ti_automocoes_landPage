@@ -4,12 +4,8 @@ import styled from 'styled-components'
 export const Nav = styled.nav`
   align-items: center;
   background: rgb(32, 24, 77);
-  background: linear-gradient(
-    90deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 58%
-  );
-  color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-light);
   display: flex;
   height: 80px;
   justify-content: space-between;
