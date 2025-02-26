@@ -9,6 +9,8 @@ import {
   TextTitle,
 } from './styles'
 import { BsPersonVcardFill } from 'react-icons/bs'
+import { IoReceiptSharp } from "react-icons/io5";
+import { MdSystemUpdateAlt } from "react-icons/md";
 import { Contact } from '../Form'
 
 const HomeForm = () => {
@@ -38,16 +40,16 @@ const HomeForm = () => {
 
           <Card>
             <Icon>
-              <BsPersonVcardFill />
+              <IoReceiptSharp />
             </Icon>
-            <TextCard>Comanda identificada por CPF</TextCard>
+            <TextCard>PDV com cardápio</TextCard>
           </Card>
 
           <Card>
             <Icon>
-              <BsPersonVcardFill />
+              <MdSystemUpdateAlt />
             </Icon>
-            <TextCard>Comanda identificada por CPF</TextCard>
+            <TextCard>Sistema unificado</TextCard>
           </Card>
         </CardContainer>
 
