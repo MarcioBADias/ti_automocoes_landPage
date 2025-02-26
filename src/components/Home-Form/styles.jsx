@@ -14,6 +14,12 @@ export const Container = styled(Element)`
   }
 `
 
+export const TextTitle = styled.div`
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: left;
+`
+
 export const CardContainer = styled.div`
   display: flex;
   justify-content: space-around;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { RiArrowDownDoubleLine } from 'react-icons/ri'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import {
@@ -8,7 +9,9 @@ import {
   Input,
   Section,
   Title,
+  TextArea,
 } from './styles'
+import { Icon } from './styles'
 
 const schema = Yup.object().shape({
   fullName: Yup.string().required(),
@@ -36,7 +39,12 @@ const Contact = () => {
         {({ errors }) => (
           <Form>
             <Container>
-              <Title>Fale Conosco</Title>
+              <TextArea>
+                <Icon>
+                  <RiArrowDownDoubleLine />
+                </Icon>
+                <Title>Preencha o formulario e aproveite agora</Title>
+              </TextArea>
               <Input name="fullName" type="text" placeholder="Nome Completo" />
               {errors.fullName && (
                 <ErrorMessage>Campo obrigatótio</ErrorMessage>

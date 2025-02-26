@@ -3,7 +3,6 @@ import { Field } from 'formik'
 import styled from 'styled-components'
 
 export const Section = styled.section`
-  min-height: 100vh;
   background: var(--cor-dark-primary);
   align-items: center;
   display: flex;
@@ -28,10 +27,21 @@ export const Container = styled.div`
     width: 80vw;
   }
 `
+export const TextArea = styled.div`
+  align-items: center;
+  display: flex;
+  width: 120%;
+`
+export const Icon = styled.div`
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-left: 3rem;
+`
 
 export const Title = styled.h1`
-  font-size: 2rem;
-  padding-bottom: 1rem;
+  color: #000000;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
 `
 
 export const Input = styled(Field)`
