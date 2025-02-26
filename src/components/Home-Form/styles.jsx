@@ -14,7 +14,37 @@ export const Container = styled(Element)`
   }
 `
 
-export const AnimatedLogo = styled.img`
+export const CardContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+`
+export const Card = styled.div`
+  align-items: center;
+  background: #ffffff;
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px black;
+  font-family: Arial, sans-serif;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 31%;
+`
+
+export const Icon = styled.div`
+  color: var(--color-primary);
+  font-size: 2rem;
+`
+
+export const TextCard = styled.p`
+  color: black;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  padding: 0.5rem;
+`
+
+/*export const AnimatedLogo = styled.img`
   margin: 1rem 0 -5rem 0rem;
   width: 250px;
   animation: spinHorizontal 5s linear infinite;
@@ -33,4 +63,4 @@ export const AnimatedLogo = styled.img`
     margin: 1rem 0 -5rem 15rem;
     width: 35%;
   }
-`
+`*/
