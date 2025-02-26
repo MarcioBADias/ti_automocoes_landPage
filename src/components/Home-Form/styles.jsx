@@ -8,14 +8,14 @@ export const Container = styled(Element)`
   padding: 1rem 2rem;
 
   @media (min-width: 840px) {
-    margin-top: 10%;
+    margin-top: 8%;
     padding: 1rem;
     width: 50%;
   }
 `
 
 export const TextTitle = styled.div`
-  font-size: 2.4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-align: left;
 `
@@ -40,14 +40,20 @@ export const Card = styled.div`
 
 export const Icon = styled.div`
   color: var(--color-primary);
-  font-size: 2rem;
+  font-size: 5rem;
 `
 
 export const TextCard = styled.p`
   color: black;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   margin-top: 5px;
   padding: 0.5rem;
+`
+
+export const ImageHightlight = styled.img`
+  align-items: center;
+  margin-left: 15%;
+  width: 700px;
 `
 
 /*export const AnimatedLogo = styled.img`

@@ -34,21 +34,22 @@ export const TextArea = styled.div`
 `
 export const Icon = styled.div`
   color: var(--color-primary);
-  font-size: 2rem;
+  font-size: 5rem;
   margin-left: 3rem;
 `
 
 export const Title = styled.h1`
   color: #000000;
-  font-size: 1rem;
+  font-size: 2rem;
   padding-bottom: 0.5rem;
 `
 
 export const Input = styled(Field)`
   background: #ffffff;
   border: 2px var(--color-primary) solid;
-  color: var(--color-primary);
   border-radius: 5px;
+  color: var(--color-primary);
+  font-size: 1.8rem;
   padding: 0.5rem;
   margin-bottom: 1rem;
   width: 82%;

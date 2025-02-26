@@ -4,11 +4,12 @@ import {
   CardContainer,
   Container,
   Icon,
+  ImageHightlight,
   TextCard,
   TextTitle,
 } from './styles'
-import { Contact } from '../../Form'
 import { BsPersonVcardFill } from 'react-icons/bs'
+import { Contact } from '../Form'
 
 const HomeForm = () => {
   return (
@@ -53,8 +54,8 @@ const HomeForm = () => {
         <Contact />
       </Container>
       <Container>
-        <img
-          style={{ width: 400 }}
+        <ImageHightlight
+          style={{ width: 700 }}
           src="/maquininha.png"
           alt="Arte da Logo"
           className="logo_art"
