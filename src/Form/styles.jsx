@@ -10,36 +10,6 @@ export const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   position: relative;
-
-  /* ::before{
-        box-shadow: 5px 0px 10px 5px var(--cor-green-primary);
-        position: absolute;
-        content: '';
-        height: 60vh;
-        width: 28vw;
-        top: 20%;
-        left: 0;
-        background: var(--cor-green-primary);
-
-        @media (max-width: 840px) {
-            display: none;
-        }
-    }
-
-    ::after{
-        box-shadow: -5px 0px 10px 5px var(--cor-green-primary);
-        position: absolute;
-        content: '';
-        height: 60vh;
-        width: 28vw;
-        top: 20%;
-        right: 0;
-        background: var(--cor-green-secondary);
-
-        @media (max-width: 840px) {
-            display: none;
-        }
-    } */
 `
 
 export const Container = styled.div`
@@ -65,16 +35,16 @@ export const Title = styled.h1`
 `
 
 export const Input = styled(Field)`
-  background: var(--cor-dark-secontary);
-  border: 1px var(--cor-green-primary) solid;
-  color: var(--cor-light-primary);
+  background: #ffffff;
+  border: 2px var(--color-primary) solid;
+  color: var(--color-primary);
   border-radius: 5px;
   padding: 0.5rem;
   margin-bottom: 1rem;
   width: 82%;
 
   ::placeholder {
-    color: var(--cor-light-primary);
+    color: var(--color-primary);
   }
 `
 
@@ -109,58 +79,37 @@ export const Option = styled.option`
   }
 `
 
-export const InputTextArea = styled.textarea`
-  background: var(--cor-dark-secontary);
-  border: 1px var(--cor-green-primary) solid;
-  border-radius: 5px;
-  color: var(--cor-light-primary);
-  font-size: 1rem;
-  padding: 0.5rem;
-  height: 200px;
-  width: 80%;
-
-  ::placeholder {
-    color: var(--cor-light-primary);
-  }
-`
-
 export const ErrorMessage = styled.span`
+  text-align: left;
   color: red;
-  margin-top: -1rem;
+  display: block;
+  margin-top: -1.2rem;
   padding: 0.5rem;
+  width: 80%;
 `
 
 export const Button = styled.button`
-  background: none;
-  border: 5px solid var(--cor-green-primary);
+  background: var(--color-primary);
+  border: none;
   border-radius: 25px;
-  box-shadow: 0px 0px 10px 5px var(--cor-green-secondary);
-  color: var(--cor-light-primary);
+  box-shadow: 5px 5px 5px 0px var(--color-secondary);
+  color: var(--color-light);
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
   margin-top: 1rem;
   padding: 0.5rem 2rem;
 
-  :hover {
-    background: var(--cor-green-primary);
-    font-size: 1.3rem;
+  &:hover {
+    background: var(--color-secondary);
+    font-size: 1.2rem;
+  }
+
+  &:active {
+    background: var(--color-primary);
   }
 
   @media (max-width: 840px) {
     margin-bottom: 2rem;
   }
 `
-
-/*export const Container = styled(Element)`
-  align-items: 'center';
-  display: 'flex';
-  justify-content: 'center';
-  padding: 1rem 2rem;
-  margin-top: 10%;
-
-  @media (min-width: 840px) {
-    padding: 1rem;
-    width: 50%;
-  }
-`*/

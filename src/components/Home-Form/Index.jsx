@@ -2,7 +2,7 @@ import React from 'react'
 import { Container } from './styles'
 import { Contact } from '../../Form'
 
-const About = () => {
+const HomeForm = () => {
   return (
     <section>
       <Container
@@ -33,4 +33,4 @@ const About = () => {
   )
 }
 
-export { About }
+export { HomeForm }

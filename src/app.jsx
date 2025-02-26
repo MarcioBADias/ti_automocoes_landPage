@@ -1,5 +1,4 @@
-import { About } from '@/components/Home-Form/Index'
-import { Contact } from '@/components/Advantages'
+import { HomeForm } from '@/components/Home-Form'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Products } from '@/components/Products'
@@ -9,10 +8,9 @@ const App = () => {
   return (
     <main className="app">
       <Header />
-      <About />
+      <HomeForm />
       <Products />
       <Services />
-      <Contact />
       <Footer />
     </main>
   )
