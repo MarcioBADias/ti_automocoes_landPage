@@ -2,10 +2,10 @@ import { Element } from 'react-scroll'
 import styled from 'styled-components'
 
 export const Container = styled(Element)`
-  align-items: 'center';
+  //align-items: center;
   background: var(--color-primary);
-  display: 'flex';
-  justify-content: 'center';
+  //display: flex;
+  //ustify-content: center;
   padding: 1rem 2rem;
   margin-top: 10%;
 
@@ -35,18 +35,24 @@ export const Table = styled.div`
 `
 
 export const Column = styled.div`
+  background: var(--color-light);
   flex: 1;
-  padding: 20px;
-  color: white;
+`
+export const TitleColumn = styled.div`
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30%;
   &.problems {
     background: #c90000;
   }
   &.solutions {
     background: #009c2a;
   }
-`
+` 
 
 export const Title = styled.h2`
+  color: var(--color-light);
   text-align: center;
   margin-bottom: 20px;
 `
@@ -57,18 +63,10 @@ export const List = styled.ul`
 `
 
 export const ListItem = styled.li`
+  color: #000000;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
   font-size: 18px;
-
-  &::before {
-    content: '\u2716';
-    color: white;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  &.solution::before {
-    content: '\u2714';
-  }
+  padding: 1rem;
 `
